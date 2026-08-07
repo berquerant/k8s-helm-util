@@ -43,9 +43,9 @@ find_version() {
 
 build_schema() {
   pushd "$1" > /dev/null || return 1
-  if [[ ! -f "values.schema.json" ]] ; then
+  if [[ -f "values.yaml" && ! -f "values.schema.json" ]] ; then
     log "build values.schema.json by helm-schema"
-    helm-schema
+    helm-schema --skip-auto-generation required,additionalProperties --skip-dependencies-schema-validation
   fi
   popd > /dev/null || return 1
 }
