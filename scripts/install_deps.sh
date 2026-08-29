@@ -32,7 +32,7 @@ esac
 
 # Install Helm
 # renovate: datasource=github-releases depName=helm/helm
-HELM_VERSION="v4.2.3"
+HELM_VERSION="v4.2.4"
 curl -fsSL "https://get.helm.sh/helm-${HELM_VERSION}-linux-${HELM_ARCH}.tar.gz" | tar -xz
 mv "linux-${HELM_ARCH}/helm" /usr/local/bin/helm
 rm -rf "linux-${HELM_ARCH}"
