@@ -52,7 +52,7 @@ chmod +x /usr/local/bin/helm-schema
 
 # Install helmfile
 # renovate: datasource=github-releases depName=helmfile/helmfile
-HELMFILE_VERSION="1.7.3"
+HELMFILE_VERSION="1.7.4"
 curl -fsSL "https://github.com/helmfile/helmfile/releases/download/v${HELMFILE_VERSION}/helmfile_${HELMFILE_VERSION}_linux_${HELMFILE_ARCH}.tar.gz" | tar -xz
 mv helmfile /usr/local/bin/helmfile
 chmod +x /usr/local/bin/helmfile
