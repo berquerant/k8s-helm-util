@@ -39,7 +39,7 @@ rm -rf "linux-${HELM_ARCH}"
 
 # Install yq
 # renovate: datasource=github-releases depName=mikefarah/yq
-YQ_VERSION="v4.53.3"
+YQ_VERSION="v4.53.6"
 curl -fsSL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_${YQ_ARCH}" -o /usr/local/bin/yq
 chmod +x /usr/local/bin/yq
 
