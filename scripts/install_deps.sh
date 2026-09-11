@@ -45,7 +45,7 @@ chmod +x /usr/local/bin/yq
 
 # Install helm-schema
 # renovate: datasource=github-releases depName=dadav/helm-schema
-HELM_SCHEMA_VERSION="0.23.4"
+HELM_SCHEMA_VERSION="0.23.5"
 curl -fsSL "https://github.com/dadav/helm-schema/releases/download/${HELM_SCHEMA_VERSION}/helm-schema_${HELM_SCHEMA_VERSION}_Linux_${HELM_SCHEMA_ARCH}.tar.gz" | tar -xz
 mv helm-schema /usr/local/bin/helm-schema
 chmod +x /usr/local/bin/helm-schema
